@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="maintabbar">
     <tab-bar>
       <tab-bar-item path="/home" activecolor="#f66a8d">
         <img slot="item-icon" src="../../assets/img/tabbar/home.png" alt="" />

@@ -1,20 +1,21 @@
 <template>
-  <div id="app">
-    <main-tab-bar></main-tab-bar>
-  </div>
+<div id="app">
+  <!-- <main-tab-bar></main-tab-bar> -->
+hello
+</div>
 </template>
 
 <script>
-import MainTabBar from "./components/content/MainTabBar.vue"
+import MainTabBar from "./components/content/MainTabBar"
 
 export default {
-  name: "App",
-  components: {
+  name:"app",
+  components:{
     MainTabBar
-  },
-};
+  }
+}
 </script>
 
 <style>
-@import "./assets/css/base.css";
+/* @import "./assets/css/base.css"; */
 </style>

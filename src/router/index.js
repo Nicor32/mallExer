@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+
+import { useRouter } from 'vue-router'
 
 
 
@@ -9,7 +9,7 @@ const Shopping = () => import('../views/shopping/Shopping.vue')
 const Profile = () => import('../views/profile/Profile.vue')
 
 // 1.安装插件
-Vue.use(VueRouter)
+createApp(App).use(VueRouter)
 
 const routes = [
     {
@@ -35,7 +35,7 @@ const routes = [
 
 ]
 
-const router = new VueRouter({
+const router = useRouter({
     routes,
     mode:"history"
 })
