@@ -1,7 +1,6 @@
 <template>
 <div id="app">
-  <!-- <main-tab-bar></main-tab-bar> -->
-hello
+  <main-tab-bar></main-tab-bar>
 </div>
 </template>
 
@@ -17,5 +16,5 @@ export default {
 </script>
 
 <style>
-/* @import "./assets/css/base.css"; */
+@import "./assets/css/base.css";
 </style>

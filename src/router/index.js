@@ -1,7 +1,5 @@
 
-import { useRouter } from 'vue-router'
-
-
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const Home = () => import('../views/home/Home.vue')
 const Category = () => import('../views/category/Category.vue')
@@ -9,7 +7,7 @@ const Shopping = () => import('../views/shopping/Shopping.vue')
 const Profile = () => import('../views/profile/Profile.vue')
 
 // 1.安装插件
-createApp(App).use(VueRouter)
+// createApp(App).use(VueRouter)
 
 const routes = [
     {
@@ -35,9 +33,9 @@ const routes = [
 
 ]
 
-const router = useRouter({
+const router = createRouter({
     routes,
-    mode:"history"
+    history: createWebHashHistory()
 })
 
 export default router
